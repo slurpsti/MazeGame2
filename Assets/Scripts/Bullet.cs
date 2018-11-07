@@ -5,9 +5,9 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
 //Members
-public float moveSpeed = 7.of;
+public float moveSpeed = 7.0f;
 
-private float maxDistance = 0.of;
+private float timePassed = 0.0f;
 	
 //functions
 
@@ -18,7 +18,7 @@ private float maxDistance = 0.of;
 		timePassed += 1 * Time.deltaTime;
 		if(timePassed >= 5)
 		{
-			Destroy(this.gameobject);
+			Destroy(this.gameObject);
 		} 
 
 		
